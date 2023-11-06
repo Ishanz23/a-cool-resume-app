@@ -1,0 +1,513 @@
+---
+import { Image } from "astro:assets";
+import MyImage from "@/assets/me.png";
+import GithubWhiteLogo from "@/assets/github-mark-white.svg";
+import LinkedInLogo from "@/assets/In-White-26.png";
+---
+
+<div class="flex w-full h-full min-h-screen">
+  <div
+    class="flex flex-col justify-start p-4 bg-teal-900 basis-1/5 text-slate-50 print:bg-slate-100 print:text-slate-800 print:break-after-all"
+  >
+    <!-- details -->
+    <div class="flex items-center h-24 gap-4 my-4">
+      <div class="image">
+        <Image
+          src={MyImage}
+          alt={"Sayantan's Photo"}
+          loading={"lazy"}
+          class="w-[6rem] h-[6rem] rounded-full order-1 md:order-2 print:w-16 print:h-16"
+        />
+      </div>
+      <div class="flex flex-col items-start justify-center gap-2">
+        <div
+          class="text-xl font-bold tracking-wider text-teal-200 print:text-base print:tracking-normal print:text-slate-800"
+        >
+          SAYANTAN DEY
+        </div>
+        <div
+          class="text-xs font-light tracking-wide text-teal-100 print:text-slate-800"
+        >
+          WEB DEVELOPER
+        </div>
+      </div>
+    </div>
+    <!-- <h3 class="my-4 text-xl font-bold tracking-wider uppercase">DETAILS</h3> -->
+    <div class="flex items-center gap-2 my-2 print:text-sm">
+      <span class="material-symbols-outlined">home_pin</span>
+      <span> Kolkata, India</span>
+    </div>
+    <div class="flex items-center gap-2 my-2 print:text-sm">
+      <span class="material-symbols-outlined">call</span>
+      <a href="tel:+919748365829"> +91 9748365829</a>
+    </div>
+    <div class="flex items-center gap-2 my-2 print:text-sm">
+      <span class="material-symbols-outlined">email</span>
+      <a href="mailto:web.dev.sayantan@gmail.com">web.dev.sayantan@gmail.com</a>
+    </div>
+    <!-- Socials -->
+    <div class="my-4 print:hidden">
+      <h3 class="my-4 text-xl font-bold tracking-wider uppercase">
+        Social Links
+      </h3>
+      <div class="flex items-center gap-2 my-4">
+        <Image src={GithubWhiteLogo} alt={"github logo"} class="w-6 h-6" />
+        <a href="https://github.com/ishanz23">Github</a>
+      </div>
+      <div class="flex items-center gap-2 my-4">
+        <Image src={LinkedInLogo} alt={"Linked logo"} class="w-6 h-6" />
+        <a href="https://www.linkedin.com/in/webdevsayantan/"> LinkedIn</a>
+      </div>
+      <div class="flex items-center gap-2 my-4">
+        <span class="material-symbols-outlined">exit_to_app</span>
+        <a href="https://sayantan.work">Portfolio</a>
+      </div>
+    </div>
+    <!-- Skills -->
+    <div class="flex flex-col gap-4 my-4">
+      <h3 class="text-xl font-bold tracking-wider uppercase">Skills</h3>
+      <div class="flex flex-col gap-1">
+        <span class="text-sm font-bold">JavaScript</span>
+        <div class="w-5/6 h-2 rounded-r-md bg-slate-200 print:bg-slate-800">
+        </div>
+      </div>
+      <div class="flex flex-col gap-1">
+        <span class="text-sm font-bold">HTML</span>
+        <div class="w-5/6 h-2 rounded-r-md bg-slate-200 print:bg-slate-800">
+        </div>
+      </div>
+      <div class="flex flex-col gap-1">
+        <span class="text-sm font-bold">CSS</span>
+        <div class="w-5/6 h-2 rounded-r-md bg-slate-200 print:bg-slate-800">
+        </div>
+      </div>
+      <div class="flex flex-col gap-1">
+        <span class="text-sm font-bold">Angular</span>
+        <div class="w-4/5 h-2 rounded-r-md bg-slate-200 print:bg-slate-800">
+        </div>
+      </div>
+      <div class="flex flex-col gap-1">
+        <span class="text-sm font-bold">Typescript</span>
+        <div class="w-2/3 h-2 rounded-r-md bg-slate-200 print:bg-slate-800">
+        </div>
+      </div>
+      <div class="flex flex-col gap-1">
+        <span class="text-sm font-bold">React</span>
+        <div class="w-2/3 h-2 rounded-r-md bg-slate-200 print:bg-slate-800">
+        </div>
+      </div>
+      <div class="flex flex-col gap-1">
+        <span class="text-sm font-bold">Next.js</span>
+        <div class="w-1/2 h-2 rounded-r-md bg-slate-200 print:bg-slate-800">
+        </div>
+      </div>
+    </div>
+    <!-- Languages -->
+    <div class="flex flex-col gap-4 my-4">
+      <h3 class="text-xl font-bold tracking-wider uppercase">Languages</h3>
+      <div class="flex flex-col gap-1">
+        <span class="text-sm font-bold"
+          >Bengali <span class="text-xs font-normal">(Native)</span></span
+        >
+        <div class="w-5/6 h-2 rounded-r-md bg-slate-200 print:bg-slate-800">
+        </div>
+      </div>
+      <div class="flex flex-col gap-1">
+        <span class="text-sm font-bold"
+          >English <span class="text-xs font-normal">(Proficient)</span></span
+        >
+        <div class="w-3/4 h-2 rounded-r-md bg-slate-200 print:bg-slate-800">
+        </div>
+      </div>
+      <div class="flex flex-col gap-1">
+        <span class="text-sm font-bold"
+          >Hindi <span class="text-xs font-normal">(Amateur)</span></span
+        >
+        <div class="w-3/5 h-2 rounded-r-md bg-slate-200 print:bg-slate-800">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Right Section  -->
+  <div
+    class="px-8 py-4 left basis-4/5 bg-slate-100 print:px-4 print:py-2 print:bg-white"
+  >
+    <!-- Profile Summary -->
+    <div class="flex flex-col my-4 text-slate-800">
+      <div
+        class="py-2 mb-2 text-xl font-bold tracking-wider uppercase border-b-2 border-slate-400"
+      >
+        PROFILE SUMMARY
+      </div>
+      <div class="px-4 text-sm">
+        <div class="flex pb-2 font-normal text-slate-700 print:text-xs">
+          I develop web apps, primarily using Angular, sometimes using
+          React(Next.js) and gave occasional shots to frameworks like Svelte,
+          Astro and Solid.
+          <br />
+           My goal is to make browsing the Internet a better experience for it's
+          users, one app at a time.
+          <br />
+           I'm actively trying to broaden my skill-set and excel at back-end
+          development too.
+        </div>
+      </div>
+    </div>
+    <!-- Employment History -->
+    <div class="flex flex-col gap-2 my-4 text-slate-800">
+      <div
+        class="py-2 mb-4 text-xl font-bold tracking-wider uppercase border-b-2 border-slate-400"
+      >
+        Employment Timeline
+      </div>
+      <!-- Nagarro -->
+      <div class="flex flex-col gap-2 px-4">
+        <div
+          class="flex items-center justify-between gap-2 p-2 font-bold uppercase rounded-lg bg-slate-100"
+        >
+          <div class="flex flex-col items-center w-full gap-2">
+            <span class="text-lg tracking-wider text-slate-700 basis-full">
+              Nagarro Enterprise Services Pvt Ltd
+            </span>
+            <div class="flex items-center justify-between w-full">
+              <span class="text-xs tracking-wide text-slate-500">
+                <span class="text-green-600">September 2021 - Present</span>
+              </span>
+              <span
+                class="text-xs font-bold tracking-wide uppercase text-slate-500"
+                >Associate Staff Engineer
+              </span>
+            </div>
+          </div>
+        </div>
+        <ul class="pl-6 pr-2 text-sm list-disc text-slate-700 print:text-xs">
+          <li class="pb-2">
+            Leading the front-end migration of a legacy web app to an Angular
+            app that manages Inter-modal gates for one of the largest
+            transportation supplier of U.S.A.
+          </li>
+          <li class="pb-2">
+            Researching and preparing for migrating the front-end architecture
+            from Single Page App to MicroFrontends.
+          </li>
+          <li class="pb-2">
+            <strong>Technologies Used:</strong> Angular 14, PrimeNg
+          </li>
+        </ul>
+      </div>
+      <!-- Erevmax -->
+      <div class="flex flex-col gap-2 px-4">
+        <div
+          class="flex items-center justify-between gap-2 p-2 font-bold uppercase rounded-lg bg-slate-100"
+        >
+          <div class="flex flex-col items-center w-full gap-2">
+            <span class="text-lg tracking-wider text-slate-700 basis-full">
+              Erevmax Technologies Pvt Ltd
+            </span>
+            <div class="flex items-center justify-between w-full">
+              <span class="text-xs tracking-wide text-slate-500">
+                November 2020 - August 2021
+              </span>
+              <span
+                class="text-xs font-bold tracking-wide uppercase text-slate-500"
+                >Software Engineer
+              </span>
+            </div>
+          </div>
+        </div>
+        <ul class="pl-6 pr-2 text-sm list-disc text-slate-700 print:text-xs">
+          <li class="pb-2">
+            Was involved in development of an internal web based platform which
+            contains other utility applications used in Erevmax.
+          </li>
+          <li class="pb-2">
+            Performed R&D and created a POC on an alternate tech-stack
+            Next.js-NestJs-Mongo-GraphQL for building a SEO-friendly fast
+            Progressive Web App.
+          </li>
+          <li class="pb-2">
+            <strong>Technologies Used:</strong> Angular 11, Nx, Angular
+            Material, NgRx, Next.js, NestJS
+          </li>
+        </ul>
+      </div>
+      <!-- PRM Fincon -->
+      <div class="flex flex-col gap-2 px-4">
+        <div
+          class="flex items-center justify-between gap-2 p-2 font-bold uppercase rounded-lg bg-slate-100"
+        >
+          <div class="flex flex-col items-center w-full gap-2">
+            <span class="text-lg tracking-wider text-slate-700 basis-full">
+              PRM Fincon
+            </span>
+            <div class="flex items-center justify-between w-full">
+              <span class="text-xs tracking-wide text-slate-500">
+                April 2020 - October 2020
+              </span>
+              <span
+                class="text-xs font-bold tracking-wide uppercase text-slate-500"
+                >Web Developer
+              </span>
+            </div>
+          </div>
+        </div>
+        <ul class="pl-6 pr-2 text-sm list-disc text-slate-700 print:text-xs">
+          <li class="pb-2">
+            Was Angular developer in a team which was building a web based
+            financial product that automates the entire loan approval process
+            for corporates.
+          </li>
+          <li class="pb-2">
+            <strong>Technologies Used:</strong> Angular 8, Nx, Scss
+          </li>
+        </ul>
+      </div>
+      <!-- Erevmax -->
+      <div class="flex flex-col gap-2 px-4">
+        <div
+          class="flex items-center justify-between gap-2 p-2 font-bold uppercase rounded-lg bg-slate-100"
+        >
+          <div class="flex flex-col items-center w-full gap-2">
+            <span class="text-lg tracking-wider text-slate-700 basis-full">
+              Erevmax Technologies Pvt Ltd
+            </span>
+            <div class="flex items-center justify-between w-full">
+              <span class="text-xs tracking-wide text-slate-500">
+                October 2018 - April 2020
+              </span>
+              <span
+                class="text-xs font-bold tracking-wide uppercase text-slate-500"
+                >Software Engineer
+              </span>
+            </div>
+          </div>
+        </div>
+        <ul class="pl-6 pr-2 text-sm list-disc text-slate-700 print:text-xs">
+          <li class="pb-2">
+            Developed the frontend for <a
+              href="https://www.agentx.com"
+              target="_blank"
+              class="text-blue-500">AgentX</a
+            >, a Travel Itinerary building app, that helps travel agents book
+            hotels, flights, cabs & sight-seeing experiences.
+          </li>
+          <li class="pb-2">
+            <strong>Technologies Used:</strong> Angular 8, Bootstrap, Scss,
+            Svelte
+          </li>
+        </ul>
+      </div>
+      <!-- TCS -->
+      <div class="flex flex-col gap-2 px-4 print:break-after-page">
+        <div
+          class="flex items-center justify-between gap-2 p-2 font-bold uppercase rounded-lg bg-slate-100"
+        >
+          <div class="flex flex-col items-center w-full gap-2">
+            <span class="text-lg tracking-wider text-slate-700 basis-full">
+              Tata Consultancy Services
+            </span>
+            <div class="flex items-center justify-between w-full">
+              <span class="text-xs tracking-wide text-slate-500">
+                September 2014 - October 2018
+              </span>
+              <span
+                class="text-xs font-bold tracking-wide uppercase text-slate-500"
+                >Systems Engineer
+              </span>
+            </div>
+          </div>
+        </div>
+        <ul class="pl-6 pr-2 text-sm list-disc text-slate-700 print:text-xs">
+          <li class="pb-2">
+            Got hands dirty on several technologies starting from Mainframe,
+            Perl, VBScript, Java, Spring, ELK stack before finding my love for
+            Modern Web Development.
+          </li>
+          <li class="pb-2">
+            Developed a search repository for client using Angular 5, Bootstrap
+            & Elasticsearch.
+          </li>
+          <li class="pb-2">
+            <strong>Technologies Learned:</strong> Java, Angular 5, VB Script,
+            Elasticsearch
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Internships -->
+    <div class="flex flex-col gap-2 my-4 text-slate-800 print:pt-12">
+      <div
+        class="py-2 mb-2 text-xl font-bold tracking-wider uppercase border-b-2 border-slate-400"
+      >
+        Internships
+      </div>
+      <!-- IXIA -->
+      <div class="flex flex-col gap-2 px-4">
+        <div
+          class="flex items-center justify-between gap-2 p-2 font-bold uppercase rounded-lg bg-slate-100"
+        >
+          <div class="flex flex-col items-center w-full gap-2">
+            <span class="text-lg tracking-wider text-slate-700 basis-full">
+              Ixia Technologies
+            </span>
+            <div class="flex items-center justify-between w-full">
+              <span class="text-xs tracking-wide text-slate-500">
+                July 2013 - July 2014
+              </span>
+              <span
+                class="text-xs font-bold tracking-wide uppercase text-slate-500"
+                >Intern
+              </span>
+            </div>
+          </div>
+        </div>
+        <ul class="pl-6 pr-2 text-sm list-disc text-slate-700 print:text-xs">
+          <li class="pb-2">
+            Learned Python and Django framework and built a performance
+            management tracker for our internal team.
+          </li>
+          <li class="pb-2">
+            Learned HTML, CSS and Javascript to develop the
+            performancemanagement UI.
+          </li>
+          <li class="pb-2">
+            <strong>Technologies Learned:</strong> Python, Django, HTML, CSS,
+            JavaScript
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Certifications -->
+    <div class="flex flex-col gap-2 my-4 text-slate-800 print:pt-4">
+      <div
+        class="py-2 mb-2 text-xl font-bold tracking-wider uppercase border-b-2 border-slate-400"
+      >
+        Certifications
+      </div>
+      <!-- Udemy -->
+
+      <div class="flex flex-col gap-2 px-4 print:gap-4">
+        <ul
+          class="p-2 pl-6 pr-2 text-sm list-disc bg-gray-100 rounded-md text-slate-700 print:text-xs"
+        >
+          <li class="pb-2 font-bold">Angular - The Complete Guide (Udemy)</li>
+          <li class="pb-2">
+            <strong>Credentials Link:</strong>&nbsp;
+            <a
+              href="https://www.udemy.com/certificate/UC-6PCFDJEK/"
+              class="text-blue-600"
+              >https://www.udemy.com/certificate/UC-6PCFDJEK/</a
+            >
+          </li>
+          <li class="pb-2">
+            <strong>Date Obtained:</strong> December, 2018
+          </li>
+        </ul>
+        <ul
+          class="p-2 pl-6 pr-2 text-sm list-disc bg-gray-100 rounded-md text-slate-700 print:text-xs"
+        >
+          <li class="pb-2 font-bold">Reactive Angular Course (With RxJs)</li>
+          <li class="pb-2">
+            <strong>Credentials Link:</strong>&nbsp;
+            <a
+              href="https://www.udemy.com/certificate/UC-9b0b8d72-c3c5-4ac4-9c3d-779ad2c6436f/"
+              class="text-blue-600"
+              >https://www.udemy.com/certificate/UC-9b0b8d72-c3c5-4ac4-9c3d-779ad2c6436f/</a
+            >
+          </li>
+          <li class="pb-2">
+            <strong>Date Obtained:</strong> June, 2020
+          </li>
+        </ul>
+        <ul
+          class="p-2 pl-6 pr-2 text-sm list-disc bg-gray-100 rounded-md text-slate-700 print:text-xs"
+        >
+          <li class="pb-2 font-bold">
+            JavaScript: Understanding the weird parts
+          </li>
+          <li class="pb-2">
+            <strong>Credentials Link:</strong>&nbsp;
+            <a
+              href="https://www.udemy.com/certificate/UC-62cea441-1ecb-4336-b685-700434ccd4bf/"
+              class="text-blue-600"
+              >https://www.udemy.com/certificate/UC-62cea441-1ecb-4336-b685-700434ccd4bf/</a
+            >
+          </li>
+          <li class="pb-2">
+            <strong>Date Obtained:</strong> May, 2021
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Education -->
+    <div class="flex flex-col gap-2 my-4 text-slate-800 print:pt-4">
+      <div
+        class="py-2 mb-2 text-xl font-bold tracking-wider uppercase border-b-2 border-slate-400"
+      >
+        Education
+      </div>
+      <!-- Engineering -->
+      <div class="flex flex-col gap-2 px-4">
+        <div
+          class="flex items-center justify-between gap-2 p-2 font-bold uppercase rounded-lg bg-slate-100"
+        >
+          <div class="flex flex-col items-center w-full gap-2">
+            <span class="text-lg tracking-wider text-slate-700 basis-full">
+              Netaji Subhash Engineering College
+            </span>
+            <div class="flex items-center justify-between w-full">
+              <span class="text-xs tracking-wide text-slate-500">
+                August 2010 - May 2014
+              </span>
+              <span
+                class="text-xs font-bold tracking-wide uppercase text-slate-500"
+                >Bachelor of Technology (B.Tech.)
+              </span>
+            </div>
+          </div>
+        </div>
+        <ul class="pl-6 pr-2 text-sm list-disc text-slate-700 print:text-xs">
+          <li class="pb-2">
+            <strong>Specialization:</strong> Computer Science & Engineering
+          </li>
+          <li class="pb-2">
+            <strong>GPA:</strong> 7.92
+          </li>
+        </ul>
+      </div>
+      <!-- Engineering -->
+      <div class="flex flex-col gap-2 px-4">
+        <div
+          class="flex items-center justify-between gap-2 p-2 font-bold uppercase rounded-lg bg-slate-100"
+        >
+          <div class="flex flex-col items-center w-full gap-2">
+            <span class="text-lg tracking-wider text-slate-700 basis-full">
+              Ballygunge Govt High School
+            </span>
+            <div class="flex items-center justify-between w-full">
+              <span class="text-xs tracking-wide text-slate-500">
+                June 2008 - May 2010
+              </span>
+              <span
+                class="text-xs font-bold tracking-wide uppercase text-slate-500"
+                >Higher Secondary
+              </span>
+            </div>
+          </div>
+        </div>
+        <ul class="pl-6 pr-2 text-sm list-disc text-slate-700 print:text-xs">
+          <li class="pb-2">
+            <strong>Specialization:</strong> Mathematics, Physics, Chemistry,
+            Statistics
+          </li>
+          <li class="pb-2">
+            <strong>Percentage Obtained:</strong> 80.05%
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
